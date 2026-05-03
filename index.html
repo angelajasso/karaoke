@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karaoke App</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>🎤 Karaoke Dashboard</h1>
+  </header>
+
+  <main class="app">
+
+    <section class="controls">
+      <input type="file" id="audio-input" accept="audio/*" />
+      <input type="file" id="lyrics-input" accept=".lrc" />
+
+      <button id="play">Play</button>
+      <button id="pause">Pause</button>
+      <p id="status"></p>
+    </section>
+    
+
+    <section class="player">
+      <div class="progress-container">
+        <div id="progress"></div>
+      </div>
+    </section>
+
+    <section id="lyrics" class="lyrics"></section>
+    <canvas id="visualizer"></canvas>
+
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
